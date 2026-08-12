@@ -25,7 +25,7 @@ body {
     z-index: 1;
     animation: hand-move 3600s steps(60) infinite;
     transform-origin: bottom center;
-    transform: translate(-5px, -50%) rotate(0deg);
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
   }
 
   &__seconds-hand {
@@ -37,7 +37,7 @@ body {
     left: calc(50% - 0.75vmin);
     animation: hand-move 60s linear infinite;
     transform-origin: bottom center;
-    transform: translate(-5px, -50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
     z-index: 2;
   }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .stopwatch.stopwatch--speed-up .stopwatch__minutes-hand {
-  animation: hand-move 600s steps(30) infinite;
+  animation: hand-move 600s steps(60) infinite;
 }
 
 @keyframes hand-move {
